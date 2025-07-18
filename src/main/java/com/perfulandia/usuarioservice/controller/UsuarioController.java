@@ -46,7 +46,7 @@ public class UsuarioController {
     //Nuevo método
     @GetMapping("/carrito/{id}")
     public Carrito obtenerCarrito(@PathVariable long id){
-        return restTemplate.getForObject("http://localhost:8083/api/carritos/"+id, Carrito.class);
+        return restTemplate.getForObject("https://carritoservice.onrender.com/api/carritos/"+id, Carrito.class);
     }
 
 
